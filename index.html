@@ -11,6 +11,11 @@
 </head>
 
 <body>
+
+<!--
+rootに入るものはReactDOMによって管理される
+Reactで作られたアプリは1つのroot DOMノードをもつ
+-->
 <div id="root"></div>
 
 <script type="text/babel">
@@ -22,7 +27,8 @@
         }
     }
 
-    ReactDOM.render(<App />, document.getElementById('root'));
+    //React elementをroot DOMノードにレンダリングする
+    ReactDOM.render(<App/>, document.getElementById('root'));
 </script>
 </body>
 </html>
